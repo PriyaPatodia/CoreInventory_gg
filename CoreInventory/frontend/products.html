@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadProducts()">
+
+<h1>Product Management</h1>
+<nav>
+<a href="products.html">Products</a>
+<a href="receipts.html">Receipts</a>
+<a href="delivery.html">Delivery</a>
+<a href="adjustment.html">Adjustment</a>
+<a href="transfers.html">Transfers</a>
+</nav>
+
+<form onsubmit="addProduct(event)">
+
+<input type="text" id="pname" placeholder="Product Name" required>
+
+<input type="text" id="sku" placeholder="SKU Code" required>
+
+<input type="text" id="category" placeholder="Category" required>
+
+<input type="number" id="qty" placeholder="Quantity" required>
+
+<button type="submit">Add Product</button>
+
+</form>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>SKU</th>
+<th>Category</th>
+<th>Stock</th>
+</tr>
+</thead>
+
+<tbody id="productTable"></tbody>
+</table>
+
+<script src="products.js"></script>
+
+</body>
+</html>

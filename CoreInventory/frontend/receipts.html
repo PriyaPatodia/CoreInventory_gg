@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Receipts</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Receipts (Incoming Stock)</h1>
+<nav>
+<a href="products.html">Products</a>
+<a href="receipts.html">Receipts</a>
+<a href="delivery.html">Delivery</a>
+<a href="adjustment.html">Adjustment</a>
+<a href="transfers.html">Transfers</a>
+</nav>
+
+<form onsubmit="addReceipt(event)">
+
+<input type="text" id="supplier" placeholder="Supplier Name" required>
+
+<input type="text" id="product" placeholder="Product Name" required>
+
+<input type="number" id="quantity" placeholder="Quantity" required>
+
+<button type="submit">Add Receipt</button>
+
+</form>
+
+<h2>Receipt List</h2>
+
+<table border="1" id="receiptTable">
+
+<tr>
+<th>Supplier</th>
+<th>Product</th>
+<th>Quantity</th>
+</tr>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
